@@ -1,0 +1,23 @@
+{% extends "base.html" %} 
+{%load static%} 
+
+{% block title %}
+<title>Home</title>
+{% endblock %} 
+
+{% block content %}
+<section class="bg-danger-subtle vh-100">
+  <div
+    class="d-flex flex-column flex-lg-row container mx-auto align-items-center py-5"
+  >
+    <h1 class="text-center m-5 w-lg-50 w-100">
+      Welcome to our shop buy some food.
+      <span class="text-primary">Go to Show item</span>
+    </h1>
+
+    <div class="w-lg-50 w-100 mx-auto">
+      <img class="w-full" src="{%static 'bg-home.webp'%}" alt="" />
+    </div>
+  </div>
+</section>
+{% endblock %}

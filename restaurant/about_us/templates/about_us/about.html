@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{%load static %}
+
+{% block styleSheets %}
+<link rel="stylesheet" href="{%static 'about.css'%}">
+{% endblock %}
+
+{% block title %}
+<title>About us</title>
+{% endblock %}
+
+{% block content %}
+    <section>
+        <section class="bg-danger-subtle vh-100">
+            <div
+              class="d-flex flex-column flex-lg-row container mx-auto align-items-center py-5"
+            >
+              <div class="text-center m-5 w-lg-50 w-100">
+               <h1>
+                About us
+               </h1>
+               <p>Owner Raiyan</p>
+               <p class="fw-medium text-light-emphasis ">Welcome to Meal Hero, a culinary haven where tradition meets innovation. Nestled in the heart of Dhaka, Bangladesh, our restaurant is a testament to Raiyan's passion for food and his dedication to serving authentic Bangladeshi cuisine with a modern twist.
+
+                Raiyan's culinary journey began in his grandmother's kitchen, where he was captivated by the symphony of flavors and aromas that emerged from her cooking. Inspired by her legacy, Raiyan embarked on a mission to preserve the essence of Bangladeshi cuisine while infusing it with his own creativity and flair.</p>
+              </div>
+          
+              <div class="w-lg-50 w-100 mx-auto">
+                <img class="w-75 rounded" src="{%static 'profile.jpg'%}" alt="" />
+              </div>
+            </div>
+          </section>
+    </section>
+{% endblock  %}
